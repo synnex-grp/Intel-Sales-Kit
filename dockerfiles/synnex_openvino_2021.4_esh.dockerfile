@@ -17,10 +17,10 @@ ENV PYTHON_VER python3.8
 RUN ${PYTHON_VER} -m pip install --no-cache-dir -r ${INTEL_OPENVINO_DIR}/python/${PYTHON_VER}/requirements.txt && \
     ${PYTHON_VER} -m pip install --no-cache-dir -r ${INTEL_OPENVINO_DIR}/deployment_tools/tools/benchmark_tool/requirements.txt;
 
-ADD 2021.4_ESH/smartcity_demo.sh /home/openvino
-ADD 2021.4_ESH/SYNNEX_demokit.tar.xz /home/openvino
-ADD 2021.4_ESH/action_recognition.sh /home/openvino
-ADD 2021.4_ESH/vehicle_pedestrian_tracking.sh /home/openvino
-ADD 2021.4_ESH/human_pose_estimation.sh /home/openvino
+ADD 2021.4/smartcity_demo.sh /home/openvino
+ADD 2021.4/SYNNEX_demokit.tar.xz /home/openvino
+ADD 2021.4/action_recognition.sh /home/openvino
+ADD 2021.4/vehicle_pedestrian_tracking.sh /home/openvino
+ADD 2021.4/human_pose_estimation.sh /home/openvino
 
 CMD ["/bin/bash"]
