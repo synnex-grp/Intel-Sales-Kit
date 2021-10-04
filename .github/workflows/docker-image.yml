@@ -15,5 +15,5 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Build the Docker image
-      run: docker build --build-arg models_url=openvino_models.tgz --build-arg patch_url=2021.4_ESH/openvino_2021.4.582_saleskit.tgz -t tgl_saleskit:2021.4_tgl -f dockerfiles/synnex_openvino_2021.4_esh.dockerfile .
+      run: docker build --build-arg models_url=openvino_models.tgz --build-arg patch_url=2021.4/openvino_2021.4.582_saleskit.tgz -t tgl_saleskit:2021.4_tgl -f dockerfiles/synnex_openvino_2021.4_esh.dockerfile .
 
